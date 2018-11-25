@@ -1,4 +1,4 @@
-from todo import Todo
+import todo
 
 
 def main():
@@ -16,13 +16,14 @@ def main():
     while command != "q" and command != "Q":
 
         if command == "S" or command == "s":
-            tasks = Todo()
-            tasks.task_list_display()
+            todo.task_list_display()
 
         elif command == "Sd" or command == "sd":
-            pass
+            todo.task_select_display(select_value="[Done]")
+
         elif command == "Su" or command == "su":
-            pass
+            todo.task_select_display(select_value="[Undone]")
+
         elif command == "A" or command == "a":
             pass
         elif command == "D" or command == "d":
