@@ -1,3 +1,6 @@
+from todo import Todo
+
+
 def main():
     print("===== Welcome to Task Management Application =====")
     print("[S]how: Show all tasks")
@@ -13,7 +16,9 @@ def main():
     while command != "q" and command != "Q":
 
         if command == "S" or command == "s":
-            pass
+            tasks = Todo()
+            tasks.task_list_display()
+
         elif command == "Sd" or command == "sd":
             pass
         elif command == "Su" or command == "su":
