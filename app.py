@@ -25,7 +25,9 @@ def main():
             todo.task_select_display(select_value="[Undone]")
 
         elif command == "A" or command == "a":
-            pass
+            new_task = input("New task? > ")
+            todo.add_new_task(new_task)
+
         elif command == "D" or command == "d":
             pass
 

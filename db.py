@@ -39,13 +39,13 @@ def select_all_info():
     return result
 
 
-def insert_task(task_name):
+def insert_task(new_task):
     conn = sqlite3.connect("task_list.sqlite")
     cursor = conn.cursor()
 
     sql = "INSERT INTO tasks (done,task_name) VALUES (?, ?)"
 
-    cursor.execute(sql, ('[Undone]', task_name))
+    cursor.execute(sql, ('[Undone]', new_task))
     conn.commit()
     conn.close()
 
