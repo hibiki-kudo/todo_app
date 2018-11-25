@@ -14,6 +14,10 @@ def task_select_display(select_value):
 def add_new_task(new_task):
     db.insert_task(new_task)
 
+
+def done_task(task):
+    db.update_done(task)
+
+
 if __name__ == "__main__":
     task_list_display()
-

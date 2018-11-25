@@ -56,7 +56,7 @@ def update_done(task_name):
 
     sql = "UPDATE tasks SET done = '[Done]' WHERE task_name =?"
 
-    cursor.execute(sql, parameters=task_name)
+    cursor.execute(sql, (task_name,))
     conn.commit()
     conn.close()
 

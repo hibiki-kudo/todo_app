@@ -29,7 +29,8 @@ def main():
             todo.add_new_task(new_task)
 
         elif command == "D" or command == "d":
-            pass
+            task = input("Task Name? > ")
+            todo.done_task(task)
 
         command = input("Your Command > ")
 
