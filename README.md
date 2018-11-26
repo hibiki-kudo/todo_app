@@ -1,4 +1,4 @@
-# todo_app
+# todo app
 ---------------------------------
 Todo application
 
